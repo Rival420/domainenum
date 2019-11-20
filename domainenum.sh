@@ -1,7 +1,7 @@
 #! /bin/bash
 
 if [[ $# -lt 1 ]];then
-        printf "[-] Please specify a domain"
+        printf "[-] Please specify a domain\n"
 	exit 1 #exit the script
 fi
 
