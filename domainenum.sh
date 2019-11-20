@@ -1,5 +1,10 @@
 #! /bin/bash
 
+if [[ $# -lt 1 ]];then
+        printf "[-] Please specify a domain"
+	exit 1 #exit the script
+fi
+
 printf "[+] enumerating subdomains for $1 ..."
 subfinder -d $1 -o subdomains.txt 1>/dev/null --silent
 
